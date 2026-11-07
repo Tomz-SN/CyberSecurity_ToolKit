@@ -117,6 +117,12 @@ Encrypted text : 107642d2...
 Encrypted text : 107642d2...
 ```
 
+**Password Strength checker**
+
+```text
+Weak Password...
+```
+
 **Password Verifier**
 
 ```text
