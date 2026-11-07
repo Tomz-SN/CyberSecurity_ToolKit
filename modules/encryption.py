@@ -11,7 +11,8 @@ def sym_etn_dtn(text):
     cipher_text = nonce + sym_gcm.encrypt(nonce,text.encode(), None)
     plain_text = sym_gcm.decrypt(cipher_text[:12], cipher_text[12:], None)
 
-    return key.hex(), cipher_text.hex(), plain_text.decode()
+    print(f"key : {key.hex()}        Encrypted text : {cipher_text.hex()}")
+    return
 
 def asym_etn_dtn(text):
     private_key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
@@ -32,10 +33,11 @@ def asym_etn_dtn(text):
                     label=None
                 )
     )
-    return cipher_text.hex(), plain_text.decode()
+    print(f"Encrypted : {cipher_text.hex()}")
+    return
 
 if __name__ == "__main__":
     text = input("Enter you Message : ")
-    print(sym_etn_dtn(text))
+    sym_etn_dtn(text)
     print("---------------------------------------")
-    print(asym_etn_dtn(text))
+    asym_etn_dtn(text)
