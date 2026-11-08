@@ -1,12 +1,11 @@
 from modules.encryption import encryption, decryption
 from modules.password import pw_strength
-from getpass import getpass
 import pwinput
 
 
 def menu():
     print("________________________________________\n")
-    print("WELCOME TO CYBERSECURITY TOOL KIT\n\n1. Message Encryption\n2. Message Decryption\n3. Password Strength Checker\n5. Exit")
+    print("WELCOME TO CYBERSECURITY TOOL KIT\n\n1. Message Encryption\n2. Message Decryption\n3. Password Strength Checker\n4. Exit")
     print("________________________________________")
     return
 
