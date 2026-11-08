@@ -31,7 +31,7 @@ Cybersecurity-Toolkit/
 │   ├── encryption.py
 │   └── password.py
 │
-├── keys.txt
+├── keys.env
 │
 └── README.md
 ```
@@ -45,7 +45,7 @@ Cybersecurity-Toolkit/
 3. A random key of equal byte length is generated.
 4. The message bytes and key bytes undergo a bitwise XOR operation.
 5. The encrypted result is converted into hexadecimal format.
-6. The generated key is saved in `keys.txt`.
+6. The generated key is saved in `keys.env`.
 7. The encrypted message is displayed in the terminal.
 
 ### Message Decryption
@@ -66,8 +66,8 @@ Cybersecurity-Toolkit/
 ### Note
 
 1. Install libraries zxcvbn,pwinput
-2. Do decrypt the message key can be found at 'keys.txt'
-3. 'keys.txt' file is in write mode, so after next use of encryption function, the previous key is deleted. 
+2. Do decrypt the message key can be found at 'keys.env'
+3. 'keys.env' file is in write mode, so after next use of encryption function, the previous key is deleted. 
 
 ## Project Information
 
