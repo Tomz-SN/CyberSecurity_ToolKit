@@ -1,11 +1,13 @@
 from modules.hashing import verifier
-from modules.encryption import encryption
+from modules.encryption import encryption, decryption
 from modules.password import hashed_pw, pw_strength, verify_pw
 from getpass import getpass
 
 
 def menu():
-    print("Welcome to the Cryptography Terminal\n1. File Integrity checker\n2. Message Encryption\n3. Message Decryption\n4. Password Strength Checker\n5. Password Verifier\n6. Exit")
+    print("________________________________________\n")
+    print("WELCOME TO CYBERSECURITY TOOL KIT\n\n1. File Integrity checker\n2. Message Encryption\n3. Message Decryption\n4. Password Strength Checker\n5. Password Verifier\n6. Exit")
+    print("________________________________________")
     return
 
 if __name__ == "__main__":
@@ -22,7 +24,9 @@ if __name__ == "__main__":
             print(f"Encrypted Message : {encryption(text)}")
             continue
         elif choice == "3":
-            text = input("Enter you Message : ")
+            text = input("Enter Encrypted Text : ")
+            key = input("Enter Key : ")
+            print(f"Original Message : {decryption(key,text)}")
             continue
         elif choice == "4":
             password = getpass("Enter Password : ")
