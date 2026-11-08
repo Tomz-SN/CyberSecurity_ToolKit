@@ -2,6 +2,7 @@ from modules.encryption import encryption, decryption
 from modules.password import pw_strength
 import pwinput
 
+# Menu for user to select option
 
 def menu():
     print("________________________________________\n")
@@ -9,8 +10,9 @@ def menu():
     print("________________________________________")
     return
 
-if __name__ == "__main__":
-    while True:
+# Menu repeats till user give choice as 4
+
+while True:
         menu()
         choice = input("\nEnter your Choice to continue : ")
         if choice == "1":
