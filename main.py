@@ -5,7 +5,7 @@ from getpass import getpass
 
 
 def menu():
-    print("Welcome to the Cryptography Terminal....\n1. File Integrity checker\n2. Symmetric Encryption\n3. Asymmetric Encryption\n4. Password Strength Checker\n5. Password Verifier\n6. Exit")
+    print("Welcome to the Cryptography Terminal\n1. File Integrity checker\n2. Symmetric Encryption\n3. Asymmetric Encryption\n4. Password Strength Checker\n5. Password Verifier\n6. Exit")
     return
 
 if __name__ == "__main__":
@@ -19,11 +19,9 @@ if __name__ == "__main__":
             continue
         elif choice == "2":
             text = input("Enter you Message : ")
-            sym_etn_dtn(text)
             continue
         elif choice == "3":
             text = input("Enter you Message : ")
-            asym_etn_dtn(text)
             continue
         elif choice == "4":
             password = getpass("Enter Password : ")
