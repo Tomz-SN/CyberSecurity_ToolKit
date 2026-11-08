@@ -9,7 +9,7 @@ def encryption(message):
 
 # Add the key to keys.txt so that it can be used for decryption...
 
-    with open("keys.txt", "w") as file:
+    with open("keys.env", "w") as file:
         file.write(key.hex())
     return encrypted_text.hex()
 
