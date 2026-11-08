@@ -1,11 +1,11 @@
 from modules.hashing import verifier
-from modules.encryption import sym_etn_dtn, asym_etn_dtn
+from modules.encryption import encryption
 from modules.password import hashed_pw, pw_strength, verify_pw
 from getpass import getpass
 
 
 def menu():
-    print("Welcome to the Cryptography Terminal\n1. File Integrity checker\n2. Symmetric Encryption\n3. Asymmetric Encryption\n4. Password Strength Checker\n5. Password Verifier\n6. Exit")
+    print("Welcome to the Cryptography Terminal\n1. File Integrity checker\n2. Message Encryption\n3. Message Decryption\n4. Password Strength Checker\n5. Password Verifier\n6. Exit")
     return
 
 if __name__ == "__main__":
@@ -19,6 +19,7 @@ if __name__ == "__main__":
             continue
         elif choice == "2":
             text = input("Enter you Message : ")
+            print(f"Encrypted Message : {encryption(text)}")
             continue
         elif choice == "3":
             text = input("Enter you Message : ")
