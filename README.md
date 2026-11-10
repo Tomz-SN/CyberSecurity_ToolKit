@@ -38,6 +38,10 @@ Cybersecurity-Toolkit/
 
 ## How It Works
 
+### User Menu
+
+Asks user to enter a choice from the given list of options and the loop repeats till user exits the program by choosing exit option
+
 ### Message Encryption
 
 1. The user enters a message.
@@ -62,6 +66,16 @@ Cybersecurity-Toolkit/
 2. The password is evaluated using `zxcvbn`.
 3. The library returns a score between 0 and 4.
 4. The application displays feedback based on the score.
+
+### Libraries to INSTALL
+
+1. zxcvbn
+2. pwinput
+
+### How to run the program
+
+1. Download the complete repository
+2. run the 'main.py' file
 
 ### Note
 
